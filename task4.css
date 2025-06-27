@@ -1,0 +1,85 @@
+.carrage{
+    height:200px;
+    width: 700px;
+    background-color:rgb(16, 8, 10);
+    position: relative;
+    left:400px;
+    top:220px;
+}
+
+.bus{
+  height:300px;width: 1000px;
+  background-color: red;
+  position: relative;
+  left:200px;
+  top:50px;
+  border:2px solid black;
+  border-radius: 20px 80px 10px 60px;
+}
+.tyre{
+     height:150px;width: 150px;
+     border: 10px solid black;
+    border-radius: 50%;
+  position: absolute;
+  top:200px;
+  left:50px;
+  background-color: black;
+}
+.tyre2{
+     height:150px;width: 150px;
+     border: 10px solid black;
+    border-radius: 50%;
+  position: absolute;
+  top:200px;
+  background-color: black;
+  right:150px;
+}
+.wheel{
+  height:70px;
+  width:70px;
+  border:10px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  background-color: beige;
+  left:30px;
+}
+.door{
+  height:200px;
+  width:100px;
+  border:5px soild black;
+  background-color: chartreuse;
+  position: absolute;
+  left:250px;
+  bottom: 0;
+}
+.bus h1{
+  color:white;
+  font-size: 60px;
+  margin:20px;
+  text-shadow: 2px2px 5px yellow;
+  position: relative;
+  top:10px;
+}
+.bus .win{
+   height:80px;
+  width:80px;
+  border:10px double black;
+  position: absolute;
+  top:30px;
+  border-radius:10px;
+  background-color: yellow;
+}
+.bus .windo{
+  left:530px;
+}
+.bus .windo2{
+  right:230px;
+}
+.bus .windo3{
+  right:100px;
+
+}
+.bus .windo4{
+  left:400px;
+}
