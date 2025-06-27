@@ -1,0 +1,42 @@
+/* position property
+relative:they will not be overlap
+absolute:it will be overlap 
+ */
+.parent{
+    height:325px;
+    width: 600px;
+    margin:150px;
+    background-color:crimson;
+    position: relative;
+    left:150px;
+    border: 2px solid black;
+}
+.parent .child{
+     height:100px;
+    width: 100px;
+    border:5px solid black;
+}
+.parent .child:nth-child(1){
+    background-color: chartreuse;
+    position: absolute;
+    top:100px;
+    left:70px;
+    background-image: url("./images.jpeg");
+    background-size: cover;
+}
+.parent .child:nth-child(2){
+    background-color: rgb(247, 246, 249);
+    position: absolute;
+    left: 260px;
+    top:100px;
+     background-image: url("https://i.pinimg.com/236x/c6/c2/50/c6c250fce15eeec822d342a1f5910b60.jpg");
+    background-size: cover;
+}
+.parent .child:nth-child(3){
+    background-color:darkmagenta;
+    position: absolute;
+    right:40px;
+    top:100px;
+    background-image: url("https://i.redd.it/ffpz6hvf7sc61.jpg");
+    background-size: cover;
+}
