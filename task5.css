@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  background-color: #e0e0e0;
+}
+.truck {
+  position: relative;
+  width: 800px;
+  height: 200px;
+  margin: 100px;
+  /* auto */
+}
+.trailer {
+  position: absolute;
+  left: 200px;
+  top: 50px;
+  width: 600px;
+  height: 120px;
+  background-color: #3f51b5;
+  border: 3px solid #030512;
+  border-radius: 4px;
+}
+.cabin {
+  position: absolute;
+  left: 50px;
+  top: 70px;
+  width: 150px;
+  height: 100px;
+  background-color: #3949ab;
+  border: 3px solid #040510;
+  border-radius: 4px;
+}
+.window {
+  position: absolute;
+  left: 70px;
+  top: 80px;
+  width: 60px;
+  height: 40px;
+  background-color: #bbdefb;
+  border: 2px solid #040c17;
+}
+.wheel {
+  position: absolute;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color:rgb(6, 2, 2);
+  border-radius: 50%;
+  border: 5px solid gray;
+}
+
+.wheel1 
+{ left: 70px;
+ }
+.wheel2 
+{ left: 140px;
+ }
+.wheel3 
+{ left: 250px; 
+}
+.wheel4 
+{
+     left: 350px;
+     }
+.wheel5 { 
+    left: 500px;
+ }
+.wheel6 {
+     left: 650px;
+     }
