@@ -1,0 +1,47 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.parent{
+    height: 2000px;
+}
+.navbar{
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.navbar img{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.navbar button{
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    background-color: orange;
+    border-radius: 10px;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    background-color: orange;
+}
+.home img{
+    height: inherit;
+    width: inherit;
+    filter: blur(2px);
+}
+.home h1{
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    color: white;
+    text-shadow: 5px 5px 15px orange;
+    font-size: 150px;
+    font-family: cursive;
+}
