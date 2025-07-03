@@ -1,0 +1,46 @@
+*{
+    margin:0%;
+    padding: 0;
+}
+.parent{
+    height: 100vh;
+    width:100%;
+   background-image: url("https://www.wallpapers13.com/wp-content/uploads/2017/03/Captain-America-Marvel-HD-Desktop-Wallpaper-For-PC-Tablet-And-Mobile-1920x1200-840x525.jpg");
+ background-size: cover;
+ background-position: center;
+}
+.outer{
+height:400px;
+width:400px;
+background-color: white;
+border:50px ridge red;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top:300px;
+left:100px;
+animation: shield 0.2s ease infinite;
+}
+
+.shield{
+    height: 200px;
+    width: 200px;
+    border:60px solid rgb(246, 27, 27);
+    border-radius: 50%;
+    background-color: rgb(16, 45, 130);
+    position: relative;
+}
+.shield img{
+    color:white;
+    position: relative;
+    left:-23px;
+    top:-32px;
+    
+}
+@keyframes shield{
+    100%{
+        transform: rotate(360deg);
+    }
+}
