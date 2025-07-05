@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+       <fieldset style="width:250px;padding:20px;background-color: aqua;">
+        <legend> <h2>Application Form</h2></legend>
+       <form action="">
+    
+        
+        <label for="name" >Name</label><br><br>
+        <input type="text" id="name" name="Name" placeholder="name" autofocus><br><br>
+         <label for="Email">Email</label><br><br>
+        <input type="email" id="Email" name="email" required><br><br>
+         <label for="con">Contact</label><br><br>
+         
+        <input type="tel" id="con" name="Contact" maxlength="10" minlength="10"><br><br>
+        <label for="age">Age</label><br><br>
+        <input type="number" id="age" name="Age" size="2"><br><br>
+        <label for="dob">DOB</label><br><br>
+        <input type="date" id="dob" name="DOB"><br><br>
+          <label for="do">DOBmanual</label><br><br>
+        <input type="datetime" id="do" name="DO"><br><br>
+          <label for="db">DOBtime</label><br><br>
+        <input type="datetime-local" id="db" name="DB"><br><br>
+          <label for="addr">Address</label><br><br>
+          <textarea rows="5" cols="30"></textarea><br><br>
+           <label for="res">Resume:</label><br><br>
+        <input type="file" id="res" name="resume"><br><br>
+        <label for="genz">Gender:</label>
+        <input id="genz"type="radio" value="female" name="1">female
+        <input id="genz"type="radio" value="male" name="1">male
+        <input id="genz"type="radio" value="others" name="1">others
+        <br><br>
+         <label for="sk">Skills:</label>
+        <input id="sk" type="checkbox" value="sql" name="1" checked >sql
+        <input id="sk" type="checkbox" value="java" name="1">java
+        <input id="sk" type="checkbox" value="webtech" name="1">webtech
+        <br><br>
+        <label for="edu">Education:</label>
+       <select name="Education" id="edu">
+       <optgroup label="bachelors">
+       <option value="">Select</option>
+       <option value="BSC">BSC</option>
+       <option value="B.Tech">BCA</option>
+        </optgroup>
+       <optgroup label="masters">
+       <option value="BCA">B.Tech</option>
+       <option value="BCA">B.E</option>
+       </optgroup>
+        </select>
+       <br><br>
+       Read:<input type="text" readonly><br><br>
+       Min and Max:<input type="date" max="2025-06-14" min="2025-06-10"><br><br>
+       Password:<input type="password" pattern="[A-Za-z0-9@#]{8}"><br><br>
+        <button>Submit</button>
+       
+    </form>
+     </fieldset>
+    </center> 
+</body>
+</html>
