@@ -1,0 +1,14 @@
+
+.box{
+    height:100vh;
+    width:100%;
+    background-color: darkmagenta;
+    background-image: url("https://media.assettype.com/deccanherald%2F2024-10-18%2Fvxtkkcca%2FGaEqdvbb0AAp0NF.jpeg?w=undefined&auto=format%2Ccompress&fit=max");
+    background-size: cover;
+    background-blend-mode: color-burn;
+    background-blend-mode: color-dodge;
+        background-blend-mode:darken;
+            background-blend-mode:hard-light;
+                background-blend-mode:lighten;
+                   
+}
