@@ -1,0 +1,87 @@
+/* .scale{
+    height:100px;
+    width:100px;
+    background-color: crimson;
+    border: 2px solid black;
+    position: relative;
+    left:100px;
+    top:100px;
+} */
+/* .scale:hover{
+    transform: scaleY(2);
+    transform: scaleX(-20);
+    transform: scale(-1);
+    transform: scale(1.2);
+    transform: skew(45deg);transform: skew(-90deg);transform: skewX(-90deg);transform: skewY(-90deg);
+    transition: 0.5s;
+} */
+
+/* transform properties transition properties  */
+
+ /* .scale:hover{
+    transform: scale(1.5) skew(45deg);
+    transform: rotate(2160deg);
+    transform:rotateX(2160deg);
+    transform:rotateY(2160deg);
+    transition: 0.5s;
+    transform:translate(-1100px);
+    transform: translateY(100px);
+    transform: translateX(1100px);
+    transition-duration: 3s;
+    transition-delay: 5s;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-in-out;
+    transition-timing-function:ease-out;
+ } */
+
+
+ .scale{
+    height:150px;
+    width:150px;
+    position: relative;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-delay: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+ }
+ @keyframes move {
+    0%{
+        top:0;
+        left:0;
+        background-image: url("https://i.pinimg.com/236x/7a/23/b1/7a23b17de2db58d12f3561351c793e05.jpg");
+        background-size: cover;
+        background-position: center;
+        transform: rotate(360deg);
+    }
+    25%{
+        top:0;
+        left:1100px;
+         background-image: url("https://preview.redd.it/l9vklw5gh4841.jpg?auto=webp&s=b1f95493722f69733b8f225d371f447e14c5fc60");
+        background-size: cover;
+        background-position: center;
+    }
+    50%{ 
+        top:400px;
+        left:1100px;
+         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKK1zSX_YjOvNSHlqwuy84X_WMWRSHNigzpA&s");
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        top:400px;
+        left:0px;
+         background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj_0Q5CwWO5kF6WNsetM7RqND6rwjbmpgrnw&s");
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        top:0;
+        left:0;
+         background-image: url("https://i.pinimg.com/736x/ae/e3/4d/aee34ddfd65c21d2696329a3a686a94c.jpg");
+        background-size: cover;
+        background-position: center;
+    }        
+ }
