@@ -1,0 +1,100 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    width:100%;
+    height:75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    background-image: linear-gradient(#0f242a,#0d191c);
+}
+nav .logo h1{
+    font-size: 30px;
+    font-weight:bold;
+  float: left;
+    letter-spacing: 1.5px;
+    color: white;
+    cursor: pointer;
+}
+nav ul{
+   float: right;
+    margin-top: 6px;
+   
+}
+nav li{
+    display:inline-block;
+    list-style: none;
+   
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color:white;
+    text-decoration: none;
+    
+}
+nav li a:hover{
+color: blue;
+}
+h2{
+    padding-left:60px;
+    padding-top: 19px;
+    font-size: 28px;
+}
+p{
+    padding-left:60px;
+    padding-top: 15px;
+    font-size:20px ;
+}
+ul{
+    padding-left:60px;
+    
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+section{
+    padding: 80px 13% 70px;
+    background-color: #121b25;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 3.5rem;
+    background: #0c1013;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.footer-content h4{
+    color:#fff;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+.footer-content li{
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.footer-content li a{
+    font-size: 18px;
+    color: #d6d6d6;
+    display: block;
+    font-weight: 400;
+    text-decoration: none;
+}
