@@ -1,0 +1,53 @@
+.c1{
+    background-color: black;
+}
+.c1 a{
+     text-decoration: none;
+    color: white;
+    font-size:40px;
+    
+}
+.c2:first-child{
+    position: relative;
+    left:150px;
+}
+.c2:nth-child(2){
+position:relative;
+left:200px;
+}
+.c2:nth-child(3){
+position:relative;
+left:250px;
+}
+.c2:nth-child(4){
+position:relative;
+left:300px;
+}
+.c2:nth-child(5){
+position:relative;
+left:350px;
+}
+a:hover{
+color:aqua;
+}
+.main{
+    height:100vh;
+    width:100%;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFJmdF2jMl5VUyolO_Qvzi1dGRPwua1XAnVufZxSikO51DiuAsJ7Nzv95IRAH8l91S7_8&usqp=CAU");
+    background-size: cover;
+}
+.main i{
+    color:rgb(239, 236, 41);
+    font-size: 130px;
+    position: relative;
+    left:400px;
+    top:140px;
+}
+.main p{
+    color:rgb(236, 250, 40);
+    font-size: xx-large;
+    position: relative;
+    left:450px;
+    top:120px;
+     font-size: 70px;
+}
