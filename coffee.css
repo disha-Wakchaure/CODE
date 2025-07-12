@@ -1,0 +1,165 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.header{
+    height:90px;width: 100%;
+    background-color: coral;
+}
+.header .navbar{
+    background-color: black;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .navbar .links{
+    display:flex;
+    list-style: none;
+    margin-right: 30px;
+}
+.header .navbar .links a{
+    padding-left: 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+.header .navbar .links a:hover{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 10px;
+}
+.banner{
+    width:100%;
+    height:550px;
+    background-color: yellow;
+    background-image:url("https://as1.ftcdn.net/v2/jpg/02/67/56/80/1000_F_267568050_gKkcBAI5XkpEHNpipkx2aIarNbwarCRN.jpg");
+    background-position: right;
+    background-size: cover;
+
+}
+.banner .content{
+    color:white;
+    text-align:left;
+
+}
+.banner h2{
+    font-size: 50px;
+    text-shadow: 3px 3px 4px chocolate;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.banner p{
+font-size: 20px;
+padding-left: 20px;
+}
+.banner button{
+    margin:20px;
+    background-color: coral;
+    border-radius: 10px;
+    font-weight: 900;
+    padding: 10px;
+    border: 2px solid black;
+    
+}
+.banner button:hover{
+    background-color:coral;
+}
+.about{
+    height:120vh;
+    width:100%;
+    background-color:rgb(255, 76, 11);
+}
+.about .card{
+    height:270px;
+    width:95%;
+    position: relative;
+    left:35px;
+}
+.about .card .ab1{
+    position:relative;
+    left:50px;
+    top:0;
+}
+.about .card .ab2{
+    position:relative;
+    left:800px;
+    top:0px;
+}
+.about .card .ab1 .s1{
+    position: relative;
+    left:400px;
+    top:100px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+.about .card  .s2{
+    position: relative;
+    left:30px;
+    top:170px;
+    font-size: 20px;
+      text-align: justify;
+      font-weight: 500;
+}
+.about .card .ab1 img:hover{
+ transform:scale(1.1);
+    transition: 0.2s;
+}
+.about .card .ab2 img:hover{
+ transform:scale(1.1);
+    transition: 0.2s;
+}
+.about .card .ab1 .he1{
+    position: relative;
+    left:400px;
+    top:90px;
+   color: white;
+}
+.about .card .he2{
+     position: relative;
+    left:30px;
+    top:160px;
+    color: white;
+}
+.services{
+    height: 600px;
+    width:100%;
+    /* background-color: rgb(255, 76, 11); */
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/028/636/441/small_2x/roasted-coffee-beans-on-brown-blurred-background-with-bokeh-effect-generative-ai-photo.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.services .card{
+    height:300px;
+    width:250px;
+    background-color:white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.services .card:hover{
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+.services .card p{
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-weight: 700;
+    text-align: justify;
+}
+.services .card button{
+    padding:5px 34px;
+    font-size: 20px;
+    position: relative;
+    top:20px;
+    left:25px;
+    background-color: orange;
+    border:none;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 0 3px 2px gray;
+}
