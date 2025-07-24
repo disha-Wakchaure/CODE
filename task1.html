@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let trainers=[
+            {
+                name:"Rohit Sir",
+                sub:['WebTech'],
+                age:23,
+                gender:'male',
+                address :{
+                   place:'Pune',
+                   area:'Balewadi',
+                   pincode:411006
+                },
+                salary:BigInt(80000),
+                designation:'Senior Software Engineer',
+            },
+
+            
+            {
+                name:"Harsha",
+                sub:['Java','selenium'],
+                age:23,
+                gender:'male',
+                address :{
+                   place:'Pune',
+                   area:'tumkur',
+                   pincode:411001
+                },
+                salary:BigInt(60000),
+                designation:'Senior Software Engineer',
+
+            },
+             {
+                name:"Collin",
+                sub:['SQL','selenium'],
+                 age:25,
+                 gender:'male',
+                 address :{
+                   place:'Pune',
+                   area:'Bhosari',
+                   pincode:411002
+                },
+                salary:BigInt(90000),
+                designation:'Senior Software developer',
+
+            },
+             {
+                name:"Sejal",
+                sub:['java'],
+                age:24,
+                gender:'female',
+                address :{
+                   place:'Pune',
+                   area:'dyari',
+                   pincode:411005
+                },
+                salary:BigInt(50000),
+                designation:'Senior Java Developer',
+
+            },
+             {
+                name:"Mehak",
+                sub:['mehak'],
+                 age:20,
+                gender:'female',
+                address :{
+                   place:'Pune',
+                   area:'nashik',
+                   pincode:411007
+                },
+                salary:BigInt(30000),
+                designation:'Senior Software Engineer',
+
+            },
+            {
+                name:"Avinash sir",
+                sub:['Java'],
+                age:27,
+                gender:'male',
+                address :{
+                   place:'Pune',
+                   area:'wakad',
+                   pincode:411004
+                },
+                salary:BigInt(20000),
+                designation:'Senior Software developer',
+
+            },
+            {
+                name:"Pradeep Sir",
+                sub:['SQL'],
+                age:22,
+                gender:'male',
+                address :{
+                   place:'Pune',
+                   area:'tumkur',
+                   pincode:411004
+                },
+                salary:BigInt(10000),
+                designation:'Senior Software developer',
+
+            },
+        ]
+// console.log(trainers);
+//1.Fetch all female employees
+    let Female=trainers.filter((ele)=>{
+            console.log(ele);
+            return ele.gender=='female'
+            
+        })
+        console.log(Female);
+        
+//4.Fetch the employees whose having same Age
+let grouped = trainers.reduce((acc, t) => ((acc[t.age] = acc[t.age] || []).push(t), acc), {});
+Object.entries(grouped)
+  .map(([age, list]) => list.length > 1 ? console.log(`Age ${age}:`, list) : null);
+
+//5.Fetch the employees whose having same designation
+
+  let desigMap = {};
+trainers.map(t => (desigMap[t.designation] = desigMap[t.designation] || []).push(t));
+Object.entries(desigMap).map(([d, list]) => list.length > 1 && console.log(`Designation: ${d}`, list));
+
+//6.Fetch the employees whose salary is greater than 70,000
+
+let highSalary = trainers.filter(t => t.salary > 70000n);
+console.log(highSalary);
+
+//8.add the company name for all employees
+
+trainers.map(t => t.company = "TechCorp");
+console.log(trainers);
+
+//9.add the hobbies of all array
+
+trainers.map(t => t.hobbies = ["reading", "coding", "music"]);
+console.log(trainers);
+
+//10.Remove the employees whose salary lesser than 50,000
+
+let filtered = trainers.filter(t => t.salary >= 50000n);
+console.log(filtered);
+
+//11.sort the employees based on Age.
+
+let sortedByAge = trainers.sort((a, b) => a.age - b.age);
+console.log(sortedByAge);
+
+ </script>
+</body>
+</html>
