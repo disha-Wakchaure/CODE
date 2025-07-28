@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Callback Hell - Cricket Players</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    #player-container img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 2s ease;
+    }
+    .fade-in {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Cricket Players (Callback Hell Demo)</h1>
+  <div id="player-container">
+    <h2 id="player-name">Loading...</h2>
+    <img id="player-img" src="" alt="Player Image">
+  </div>
+
+  <script>
+    const players = [
+      { name: "Virat Kohli", img: "https://media.gettyimages.com/id/2186592795/photo/perth-australia-virat-kohli-of-india-celebrates-scoring-a-century-during-day-three-of-the.jpg?s=612x612&w=gi&k=20&c=X-KlrGevMjbt0mqtmVvIZ4QZw2H1GwYz0kRX8sFiY_4=" },
+      { name: "Rohit Sharma", img: "https://images.mykhel.com/img/2024/07/rohit-sharma-t20-final-record-600-1719848335.jpg" },
+      { name: "MS Dhoni", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL9fGvNTcpZcrbfZOHlctVhX_H9MzJYl_Z8A&s" },
+      { name: "Jasprit Bumrah", img: "https://documents.iplt20.com/ipl/IPLHeadshot2025/9.png" },
+      { name: "Hardik Pandya", img: "https://images.news18.com/ibnlive/uploads/2022/03/hardik-pandya-checks-in-at-nca-16472642944x3.jpg" },
+      { name: "KL Rahul", img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202504/kl-rahul-10152589-1x1_0.jpg?VersionId=HBatLrwqlIEuLSdhFrcaYwV_l.3_9Qw2" },
+      { name: "Shubman Gill", img: "https://www.asksportsinfo.com/wp-content/uploads/1999/09/shubman-gill-india-cricketer.webp" },
+      { name: "Ravindra Jadeja", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7edJTWoeXjPcWWR0LHDTJgfudNfcyFHb4L40_-kXsbiJiaCR_AW-jcwqWrnImEVgdywE&usqp=CAU" },
+      { name: "Suryakumar Yadav", img: "https://pbs.twimg.com/profile_images/1582311159910215683/doSdYa8e_400x400.jpg" },
+      { name: "Mohammed Shami", img: "https://images.forbesindia.com/media/images/2023/Nov/img_221935_mohammedshami.jpg" },
+      { name: "Rishabh Pant", img: "https://cf-img-a-in.tosshub.com/sites/visualstory/stories/2022_12/story_16566/assets/2.png?time=1672384565" }
+    ];
+
+    const nameTag = document.getElementById("player-name");
+    const imgTag = document.getElementById("player-img");
+
+    function showPlayer(index, callback) {
+      nameTag.textContent = players[index].name;
+      imgTag.src = players[index].img;
+      imgTag.classList.remove("fade-in");
+      setTimeout(() => {
+        imgTag.classList.add("fade-in");
+        callback && callback();
+      }, 2000);
+    }
+
+    // Callback Hell Zone
+    showPlayer(0, () => {
+      showPlayer(1, () => {
+        showPlayer(2, () => {
+          showPlayer(3, () => {
+            showPlayer(4, () => {
+              showPlayer(5, () => {
+                showPlayer(6, () => {
+                  showPlayer(7, () => {
+                    showPlayer(8, () => {
+                      showPlayer(9, () => {
+                        showPlayer(10, () => {
+                          nameTag.textContent = "All Players Shown!";
+                        });
+                      });
+                    });
+                  });
+                });
+              });
+            });
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
